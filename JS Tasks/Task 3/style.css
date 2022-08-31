@@ -59,3 +59,20 @@
   border-radius: 5px;
   background-color: #fff;
 }
+
+#output p {
+  justify-content: left;
+}
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.user_div {
+  width: 150px;
+}
+
+.user_div img {
+  width: 150px;
+}
