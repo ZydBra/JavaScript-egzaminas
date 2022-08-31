@@ -27,3 +27,20 @@
   margin-top: 50px;
   color: #333;
 }
+
+.producer_div {
+  width: 400px;
+
+}
+
+.producer_div p {
+  margin-top: 20px;
+}
+
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px;
+  justify-content: left;
+}
