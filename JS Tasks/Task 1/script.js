@@ -12,17 +12,19 @@ function convertWeight(e) {
     e.preventDefault();
     const inputKg = document.getElementById('search').value;
     const outputDiv = document.getElementById('output');
+    const outputKg = document.createElement("p");
     const outputLb = document.createElement("p");
     const outputGr = document.createElement("p");
     const outputOz = document.createElement("p");
     const kg = Number(inputKg);
-    const lb = kg * 2.2046.toFixed(0);
+    const lb = kg * 2.2046.toFixed(1);
     const gr = kg / 0.0010000;
-    const oz = kg * 35.274.toFixed(0);
+    const oz = kg * 35.274.toFixed(1);
+    outputKg.innerText = "Entered weight "+kg + "kg, the results:";
     outputLb.innerText = "Weight in lb: "+lb + ";";
     outputGr.innerText = "Weight in g: "+gr + ";";
     outputOz.innerText = "Weight in oz: "+oz +".";
-    outputDiv.append(outputLb, outputGr, outputOz);
+    outputDiv.append(outputKg, outputLb, outputGr, outputOz);
     outputDiv.style.backgroundColor = "#f7f7f7";
   }
 
