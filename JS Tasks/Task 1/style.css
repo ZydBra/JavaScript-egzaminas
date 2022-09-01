@@ -38,6 +38,12 @@ form {
   font-size: 1.1em;
 }
 
+#output {
+  max-width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+}
+
 #submit-btn {
   width: 35%;
   background-color: #f7f7f7;
@@ -59,7 +65,8 @@ form {
   }
 
   #search,
-  #submit-btn {
+  #submit-btn,
+  #output {
     font-size: 2em;
   }
 }

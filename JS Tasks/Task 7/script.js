@@ -10,3 +10,19 @@ const audi = {
   year: 2005,
   color: 'white',
 };
+
+//Jei reikia gauti "key" reikšmes:
+function showObjectKeys (anyObject) {
+  const newArray = Object.values(anyObject);
+  return newArray 
+};
+
+console.log(showObjectKeys(audi))
+
+//Jei turėta omeny "key" pavadinimai:
+function showObjectKeysNames (anyObject) {
+  const newArray = Object.keys(anyObject);
+  return newArray 
+};
+
+console.log(showObjectKeysNames(audi))
